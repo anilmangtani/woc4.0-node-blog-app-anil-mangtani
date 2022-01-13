@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Josefin+Sans&family=Luxurious+Roman&family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Josefin+Sans&family=Luxurious+Roman&family=Moon+Dance&display=swap');
+
+.view-blog-container{
+    width: 100%;
+    height: fit-content;
+    /* change this to fit content */
+    min-height: 100vh;
+    
+}
+
+
+.view-blog-wrapper{
+    width: 95%;
+    margin: auto;
+    
+}
+.view-blog-heading{
+    width: fit-content;
+    margin: 20px auto 10px auto;
+    font-size: 1.50em;
+}
+
+.view-blog-image{
+    width: 100%;
+    height: 80vh;
+    background-color: gray;
+}
+
+.view-blog-heading h1{
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.view-blog-content{
+    margin-top: 20px;
+}
+.view-blog-content p{
+    font-family: 'Luxurious Roman', cursive;
+}
+
+
+
