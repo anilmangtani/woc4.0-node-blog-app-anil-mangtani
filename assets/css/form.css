@@ -52,11 +52,42 @@ label{
 }
 
 .form-button{
-    padding: 1em;
+   
     font-family: 'Luxurious Roman', cursive;
     border: 5px double green;
     border-radius: 5px;
     color: darkgreen;
     background-color: snow;
+
+}
+
+.buttons{
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    gap: 30px;
+    justify-items: center;
+    height: 6vh;
+
+}
+
+.form-cancel-button{
+    font-family: 'Luxurious Roman', cursive;
+    border: 5px double red;
+    border-radius: 5px;
+    color: darkred;
+    background-color: snow;
+}
+
+
+
+
+/* styling the footer! */
+.footer-section{
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: black;
 
 }

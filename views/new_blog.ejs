@@ -3,7 +3,11 @@
 <!-- /Header -->
 
 <div class="new_blog_container">
-    <%- include('include/_form')%>
+    <div class="form-container">
+        <form action="/api/blog" method="post" id="add-blog">
+            <%- include('include/_form')%>
+        </form>
+    </div>
 </div>
 <!-- Footer -->
 <%- include('include/_footer')%>

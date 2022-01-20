@@ -9,18 +9,19 @@
                 <h1>Blogs!</h1>
             </div>
             <div class="blogs-wrapper">
+                <% for(var i=0; i < blog.length;i++){ %>
                 <div class="blog-box-style">
-                    <a class="blog-box-link" href="/view-blog">
-
+                    <a class="blog-box-link" href="/view-blog?id=<%= blog[i]._id%>">
+                    <input type="hidden" name="id" value="<%= blog[i]._id%>">
                     <div class="blog-box-image">
-
+                        <%=blog[i].image%>
                     </div>
                     <div class="blog-box-heading">
-                        <h1>Blog Name!</h1>
+                        <h1><%=blog[i].title%></h1>
                     </div>
                     <div class="blog-box-desc">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, temporibus hic necessitatibus itaque repellendus ducimus quae recusandae consequuntur cumque, nisi at totam expedita architecto dolores autem nobis. Reiciendis, doloremque ullam.
+                           <%= blog[i].description%> 
                         </p>
                     </div>
                     </a>
@@ -39,26 +40,8 @@
                     </div>
                 </div>
 
-                <div class="blog-box-style">
-                        
-                </div>
-
-                <div class="blog-box-style">
-                        
-                </div>
-
-                <div class="blog-box-style">
-                        
-                </div>
-
-                <div class="blog-box-style">
-                        
-                </div>
-
-                <div class="blog-box-style">
-                        
-                </div>
             
+                <% } %>
             </div>
         </div>
     </div>
