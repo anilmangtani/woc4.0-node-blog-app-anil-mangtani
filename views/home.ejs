@@ -1,5 +1,6 @@
 <%-include('include/_header')%>
     <div class="home-container">
+        
         <div class="home-blogs-container">
             <div class="blog-container-heading">
                 <h1>Welcome to TheBlogNation</h1>
@@ -14,7 +15,7 @@
                     <a class="blog-box-link" href="/view-blog?id=<%= blog[i]._id%>">
                     <input type="hidden" name="id" value="<%= blog[i]._id%>">
                     <div class="blog-box-image">
-                        <%=blog[i].image%>
+                        <img height="100%" width="100%" src="<%- blog[i].image %>" alt="" srcset="">
                     </div>
                     <div class="blog-box-heading">
                         <h1><%=blog[i].title%></h1>
@@ -28,11 +29,11 @@
         
                     <div class="box-buttons">
                         
-                    <a href="#" class="box-btn-link">
+                    <a href="/update-blog?id=<%= blog[i]._id%>" class="box-btn-link">
                         <span class="box-btn"><i class="fas fa-edit fa-lg"></i></span>
                     </a>
 
-                    <a href="#" class="box-btn-link">
+                    <a class="box-btn-link delete" data-id=<%=blog[i]._id%>>
                         <span class="box-btn"><i class="fas fa-trash-alt fa-lg"></i></span>
                     </a>
                         

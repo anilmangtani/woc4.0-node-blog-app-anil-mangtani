@@ -26,6 +26,10 @@
     height: 80vh;
     background-color: gray;
 }
+.view-blog-image img{
+    height: 100%;
+    width: 100%;
+}
 
 .view-blog-heading h1{
     font-size: 3em;

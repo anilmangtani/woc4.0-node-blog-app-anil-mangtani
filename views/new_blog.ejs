@@ -4,7 +4,7 @@
 
 <div class="new_blog_container">
     <div class="form-container">
-        <form action="/api/blog" method="post" id="add-blog">
+        <form action="/api/blog" enctype="multipart/form-data" method="post" id="add-blog">
             <%- include('include/_form')%>
         </form>
     </div>
